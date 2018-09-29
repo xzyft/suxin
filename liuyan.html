@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_791255_zu64qmbcp0b.css">
+	<link rel="stylesheet" type="text/css" href="./css/liyan.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding:0px;
+			text-decoration: none;
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<div class="daohang">
+			<div class="head-r">
+				<ul>
+				     <li>
+				         <a  href="huahui.html">网站首页</a>
+				     </li>
+				     <li>
+				         <a  href="花言花语.html">花言花语</a>
+				     </li>
+				     <li>
+				         <a href="">素心动态</a>
+				     </li>
+				     <li>
+				     	 <a href="">淘宝商城</a>
+				     </li>
+				     <li>
+				         <a href="素馨花卉.html">素馨花艺</a> 
+				     </li>
+				     <li>
+				         <a style="color: #16B0DC" href="">留言建议</a>
+				     </li>
+				     <li>
+				         <a href="关于.html">关于素馨</a>
+				     </li>
+			    </ul>
+			</div>
+
+		</div>
+	</div>
+
+<div class="zhuti">
+	<div class="tit">
+		<h1>
+		留言建议
+		</h1>
+	</div>
+	<div class="tet">
+		<div class="cent">
+			<div class="conl">
+				<div class="list">
+					<ul>
+						<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">张三</div>
+									<div class="ri">2018-01-04&nbsp16:18:53</div>
+									<div class="geng">更新有些慢</div>
+								</div>
+							</div>
+						</li>
+						<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">张三</div>
+									<div class="ri">2018-01-04&nbsp16:18:53</div>
+									<div class="geng">更新有些慢</div>
+								</div>
+							</div>
+						</li>
+						<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">张三</div>
+									<div class="ri">2018-01-04&nbsp16:18:53</div>
+									<div class="geng">更新有些慢</div>
+								</div>
+							</div>
+						</li>
+						<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">张三</div>
+									<div class="ri">2018-01-04&nbsp16:18:53</div>
+									<div class="geng">更新有些慢</div>
+								</div>
+							</div>
+						</li>
+						<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">张三</div>
+									<div class="ri">2018-01-04&nbsp16:18:53</div>
+									<div class="geng">更新有些慢</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+					<div  class="but">
+						<button> <i class="iconfont icon-xiala"></i> 加载更多 </button>
+					</div>
+					
+				</div>
+			</div>
+			<div class="conr">
+				<input class="admin" type="text" name="" placeholder="姓名" >
+				<input type="text" name="" placeholder="联系电话">
+				<textarea placeholder="您的建议" cols="20" rows="5" maxlength="100"></textarea>
+				<div class="text">最多输入100个字，您已输入<span>0</span>个字</div>
+				<input class="yan" type="text" name="" placeholder="验证码">
+				<button>提交</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="fo">
+		<div class="ico"> 
+			<a href=""><i style="color: green" class="iconfont icon-weixin"></i></a> &nbsp&nbsp&nbsp
+			<a href=""><i style="color: skyblue" class="iconfont icon-icon_qq"></i></a>&nbsp&nbsp&nbsp
+			<a href=""><i style="color: skyblue" class="iconfont icon-youxiang"></i></a>
+		</div>
+		<p>
+			<a href="">豫ICP备17021305号</a>&nbsp&nbsp
+			<img src="./img/go.png">
+			<a href="">豫公网安备41112002000160号</a>
+		</p>
+		<div>联系电话 0371-6280519 15890062947</div>
+		<div>郑州素馨花卉有限公司版权所有©2017-2021</div>
+	</div>
+</body>
+</html>
+<script>
+	let num=document.querySelector('.conr .text span')
+	// console.log(num)
+	let text =document.querySelector('.conr textarea' )
+	let  input=document.querySelector('.conr .admin')
+	let bnt=document.querySelector('.conr button')
+	let ul=document.querySelector('.list>ul')
+
+	text.oninput=function () {
+		let textnum=text.value.length
+		num.innerHTML=textnum
+	}
+	bnt.onclick=function () {
+		let date =new Date();
+	//getDate（）获取一个月中的某一天（1-31）
+	let day=date.getDate()
+	console.log(day)
+	//getDay（）获取一周内某一天(0-6)  
+	// let day1=date.getDay()
+	// console.log(day1)
+	//getMonth()获取一年中的某月（0-11）+1
+	let month=date.getMonth()+1;
+	let year=date.getFullYear();
+	console.log(month)
+	console.log(year)
+	let hours=date.getHours()
+	let seconds=date.getSeconds()
+	let minutes=date.getMinutes()
+		let name=input.value;
+		let tt=text.value;
+		let str=`<li class="li">
+							<div class="da">
+								<div class="yt">
+									<i class="iconfont icon-yonghu1"></i>
+								</div>
+								<div class="you">
+									<div class="zhang">${name}</div>
+									<div class="ri">${year}-${month}-${day}&nbsp${hours}:${minutes}:${minutes}</div>
+									<div class="geng">${tt}</div>
+								</div>
+							</div>
+						</li>`
+		if (name!=''&&tt!='') {
+			ul.innerHTML+=str	
+		}
+		else{
+			alert('请输入姓名和内容')
+		}
+		input.value=''
+		text.value=''
+		num.innerHTML=0
+		let h=parseInt(getComputedStyle(ul,null).height)
+		console.log(h)
+		let but=document.querySelector('.but')
+		if (h>840) {
+			but.style.display='block'
+			ul.style.height=840+'px'
+			ul.style.overflowY='hidden'
+
+		}
+	}
+
+
+
+	// 鼠标移入时每个li属性发生变化
+	ul.onmouseover=function (e) {
+		// body...
+		// e.target.addEventListener('mouseover',function(e){
+		// e.cancelBubble=true;
+		// e.target.style.background='pink'
+		// e.stopPropagation()
+	    //},true)     nodeName节点名//e.target.classList.contains('li')
+	    if (e.target.className=='li'&&e.target.nodeName==='LI') {
+	    	e.target.style.background='pink'
+	    }
+	 }
+	 ul.onmouseout=function (e) {
+		// body...
+		// e.target.addEventListener('mouseover',function(e){
+		// e.cancelBubble=true;
+		// e.target.style.background='pink'
+		// e.stopPropagation()
+	    //},true)
+	    if (e.target.className=='li') {
+	    	e.target.style.background=''
+	    }
+	 }
+
+
+</script>

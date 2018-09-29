@@ -1,0 +1,41 @@
+window.onload=function (argument) {
+	let i1=document.querySelectorAll('.banner .t ul>li>a>img')
+	let d1=document.querySelectorAll('.banner .t .btt >li')
+	let ban1=document.querySelector('.banner')
+	let w1=parseInt(getComputedStyle(ban1,null).width)
+	let lb1=document.querySelector('.banner .t .bl')
+	let rb1=document.querySelector('.banner .t .br')
+	console.log(i1,d1,ban1,w1,lb1,rb1)
+
+	lrban(i1,d1,w1,lb1,rb1,'hot',ban1,1200)
+	// let i2=document.querySelectorAll('.box .content .u .l:nth-child(2) .bao>li')
+	// let d2=document.querySelectorAll('.box .content .u .l:nth-child(2) .point>li')
+	// let ban2=document.querySelector('.box .content .u .l:nth-child(2)')
+	// let w2=parseInt(getComputedStyle(ban2,null).width)
+	// let lb2=document.querySelector('.box .content .u .l:nth-child(2) .lbt')
+	// let rb2=document.querySelector('.box .content .u .l:nth-child(2) .rbt')
+	// lrban(i1,d1,w1,lb1,rb1,'hot')
+
+
+	let nav=document.querySelector('.head')
+	let word=document.querySelectorAll('.head li a')
+	let su=document.querySelector('.out .su')
+	let su1=document.querySelector('.main .su')
+	let li =document.querySelectorAll('.main li')
+	let one=document.querySelector('.center .one')
+	let two=document.querySelector('.center .two')
+	console.log(word)
+	console.log(su)
+	console.log(li)
+	anxujiazai(nav,word,su,su1,li,one,two)
+
+	// let lbtn=document.querySelector('.out .lbt')
+	// let rbtn=document.querySelector('.out .rbt')
+	// let ul=document.querySelector('.out .box .bant')
+	// let w=parseInt(getComputedStyle(ul,null).width)/6
+	// console.log(lbtn)
+	// console.log(rbtn)
+	// console.log(ul)
+	// console.log(w)
+	// py(lbtn,rbtn,ul,w)
+}
